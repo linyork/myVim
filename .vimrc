@@ -139,7 +139,7 @@ set guioptions-=m
 " 設定在狀態行顯示的訊息
 set foldcolumn=0
 set foldmethod=indent 
-set foldlevel=3
+set foldlevel=1
 " 开始折叠
 set foldenable              
 " 不要使用vi的鍵盤模式，而是vim自己的
@@ -166,15 +166,15 @@ set smarttab
 set number
 " 歷史紀錄
 set history=1000
-"禁止生成臨時文件
+" 禁止生成臨時文件
 set nobackup
 set noswapfile
-"搜索忽略大小写
+" 搜索忽略大小写
 set ignorecase
-"搜索逐字符高亮
+" 搜索逐字符高亮
 set hlsearch
 set incsearch
-"行内替换
+" 行内替换
 set gdefault
 " 編碼設定
 set enc=utf-8
@@ -188,7 +188,7 @@ set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
 " 總是顯示狀態行
 set laststatus=1
 " 命令行（在狀態下）的高度，默認為1，這裏是2
-set cmdheight=2
+set cmdheight=1
 " 偵測文件類型
 filetype on
 " 載入文件類型插件
@@ -244,3 +244,6 @@ endfunction
 filetype plugin indent on 
 " 打開文件類型檢測(智能補全)
 set completeopt=longest,menu
+
+" 背景透明
+hi Normal ctermbg=none
